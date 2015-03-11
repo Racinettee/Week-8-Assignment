@@ -4,5 +4,5 @@
 <%= song.embed_code.html_safe %>
 <% controller.song = song %>
 <small><%= render 'like_button' %></small>
-<%= render 'comments/comment_form' %>
+<%= render 'comments/comment_form', comment: song.comment.new %>
 <% end %>

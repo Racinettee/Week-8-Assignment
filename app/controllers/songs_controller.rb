@@ -4,14 +4,12 @@ class SongsController < ApplicationController
     @songs = Song.all
   end
   attr_accessor :song
+  attr_reader :id
   
   def like
-     puts 'HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII'
+  	@id = params[:id]
    respond_to do |fmt|
-  		fmt.html {
-  		puts '############# responding from html #############'
-  		render partial: "You liked that".html_safe
-  	   }
+  		fmt.html {  }
   		fmt.js { render 'like_response' }
   	end
   end

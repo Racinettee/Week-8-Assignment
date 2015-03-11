@@ -4,7 +4,10 @@ class SongsController < ApplicationController
     @songs = Song.all
   end
   attr_accessor :song
+  attr_reader :id
+  
   def like
+  	@id = params[:id]
      puts 'HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII'
    respond_to do |fmt|
   		fmt.html {
