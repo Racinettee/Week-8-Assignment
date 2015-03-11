@@ -1,0 +1,6 @@
+<h1>Loud Cloud!!!!!!!!!!</h1>
+<% controller.songs.each do |song| %>
+<h3><%= song.title %></h3>
+<%= song.embed_code.html_safe %>
+<small><%= link_to "Like", @song, remote: true, method: :count_up, controller: 'likes'%></small>
+<% end %>

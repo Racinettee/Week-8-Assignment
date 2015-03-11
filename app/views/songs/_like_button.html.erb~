@@ -1,0 +1,1 @@
+<%= link_to 'Like', 'like', class: 'like', format: :html, method: :put, remote: true %>

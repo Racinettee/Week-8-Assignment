@@ -1,0 +1,4 @@
+<%= form_for @like, :json=>{:method=>:count}, :remote => true do |f| %>
+ <%= f.hidden_field :song_id %>
+ <%= f.submit "Like" %>
+<% end %>

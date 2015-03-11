@@ -1,0 +1,5 @@
+<%= form_for @like :remote => true do |f| %>
+ <%= f.hidden_field : %>
+ <%= f.hidden_field :user_id %>
+ <%= f.submit "Like" %>
+<% end %>

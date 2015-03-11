@@ -1,0 +1,6 @@
+<h1>Loud Cloud!!!!!!!!!!</h1>
+<% controller.songs.each do |song| %>
+<h3><%= song.title %></h3>
+<%= song.embed_code.html_safe %>
+<small><%= render 'like_button' %></small>
+<% end %>

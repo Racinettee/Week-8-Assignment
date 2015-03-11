@@ -23,6 +23,6 @@ soundcloud_data.each do |data|
   puts "Creating #{data.title}"
   song = Song.create!(
     title: data.title,
-    embed_code: soundcloud_html(data)
+    text: soundcloud_html(data)
   )
 end
