@@ -4,9 +4,9 @@ Rails.application.routes.draw do
   #get 'songs/index'
   put '/like' => 'songs#like'
   resources :songs do
-  	 resources :likes, only: [:count_up]
+  	 resources :like, only: [:count_up]
   	 #get 'likes/count_up'
-  	 resources :comments, only: [:new, :create]
+  	 resources :comments, only: [:new, :delete]
   end
   
   root 'songs#index'

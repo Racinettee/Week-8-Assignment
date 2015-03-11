@@ -1,1 +1,2 @@
-<%= link_to 'Like', 'like', class: 'like', format: :html, method: :put, remote: true %>
+<%= link_to 'Like', 'like', , id: 'like'+controller.song.id.to_s,
+	class: 'like', format: :js, method: :put, remote: true %>

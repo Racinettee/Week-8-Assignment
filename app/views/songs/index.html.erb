@@ -2,5 +2,7 @@
 <% controller.songs.each do |song| %>
 <h3><%= song.title %></h3>
 <%= song.embed_code.html_safe %>
+<% controller.song = song %>
 <small><%= render 'like_button' %></small>
+<%= #render 'comments/comment_form' %>
 <% end %>

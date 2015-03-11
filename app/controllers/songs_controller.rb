@@ -3,6 +3,7 @@ class SongsController < ApplicationController
   def index
     @songs = Song.all
   end
+  attr_accessor :song
   
   def like
      puts 'HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII'
